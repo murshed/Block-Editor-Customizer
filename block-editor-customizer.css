@@ -1,0 +1,36 @@
+/* Block Editor Customizer Styles */
+
+/* Position Right Mode */
+body.bec-position-right .interface-interface-skeleton__body {
+	flex-direction: row-reverse;
+}
+
+body.bec-position-right .interface-interface-skeleton__secondary-sidebar {
+	border-right: none !important;
+	border-left: 1px solid #e0e0e0 !important;
+}
+
+/* Header Buttons: Pin, Position & Expand/Collapse Buttons */
+.bec-pin-button,
+.bec-position-button,
+.bec-expand-all-button,
+.bec-collapse-all-button {
+	align-self: center;
+	margin-right: 4px;
+}
+
+.bec-pin-button.is-pressed,
+.bec-position-button.is-pressed,
+.bec-expand-all-button.is-pressed,
+.bec-collapse-all-button.is-pressed {
+	background: #1e1e1e !important;
+	color: #ffffff !important;
+}
+
+.bec-pin-button.is-pressed:hover,
+.bec-position-button.is-pressed:hover,
+.bec-expand-all-button.is-pressed:hover,
+.bec-collapse-all-button.is-pressed:hover {
+	background: #2f2f2f !important;
+	color: #ffffff !important;
+}
