@@ -1,7 +1,7 @@
 /**
  * Block Editor Customizer
  * Modular extension for WordPress Block Editor
- * Features: Sidebar Pinning, Position Toggle (Left/Right), Expand & Collapse All for Document Overview
+ * Features: Sidebar Pinning, Position Toggle (Left/Right), Expand & Collapse All for Document Overview by Fahim Murshed
  */
 (function () {
 	if (!window.wp || !wp.domReady) return;
@@ -104,21 +104,21 @@
 				if (propsKey && expander[propsKey] && typeof expander[propsKey].onClick === 'function') {
 					try {
 						var fakeEvt = {
-							preventDefault: function () {},
-							stopPropagation: function () {},
+							preventDefault: function () { },
+							stopPropagation: function () { },
 							target: expander,
 							currentTarget: expander
 						};
 						expander[propsKey].onClick(fakeEvt, { forceToggle: true });
 						return; // Handled safely by React component!
-					} catch (err) {}
+					} catch (err) { }
 				}
 
 				// 2. Dispatch MouseEvent on span.block-editor-list-view__expander ONLY
 				try {
 					var clickEvt = new MouseEvent('click', { bubbles: true, cancelable: true, view: window });
 					expander.dispatchEvent(clickEvt);
-				} catch (err) {}
+				} catch (err) { }
 			},
 
 			isAnyExpanded: function () {
@@ -252,7 +252,7 @@
 					var expBtn = document.createElement('button');
 					expBtn.type = 'button';
 					expBtn.className = 'components-button has-icon bec-expand-collapse-button';
-					
+
 					var isCurrentlyExpanded = self.ExpandCollapseModule.isAnyExpanded();
 					var expTitle = isCurrentlyExpanded ? 'Collapse All Items' : 'Expand All Items';
 					expBtn.setAttribute('aria-label', expTitle);

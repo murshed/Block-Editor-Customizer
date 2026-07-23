@@ -73,14 +73,14 @@ final class Block_Editor_Customizer {
 	public function enqueue_editor_assets() {
 		wp_enqueue_style(
 			'block-editor-customizer-css',
-			BLOCK_EDITOR_CUSTOMIZER_URL . 'block-editor-customizer.css',
+			BLOCK_EDITOR_CUSTOMIZER_URL . 'assets/css/block-editor-customizer.css',
 			array( 'wp-components' ),
 			BLOCK_EDITOR_CUSTOMIZER_VERSION
 		);
 
 		wp_enqueue_script(
 			'block-editor-customizer-js',
-			BLOCK_EDITOR_CUSTOMIZER_URL . 'block-editor-customizer.js',
+			BLOCK_EDITOR_CUSTOMIZER_URL . 'assets/js/block-editor-customizer.js',
 			array( 'wp-element', 'wp-components', 'wp-data', 'wp-dom-ready' ),
 			BLOCK_EDITOR_CUSTOMIZER_VERSION,
 			true

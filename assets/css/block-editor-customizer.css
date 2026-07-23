@@ -13,24 +13,21 @@ body.bec-position-right .interface-interface-skeleton__secondary-sidebar {
 /* Header Buttons: Pin, Position & Expand/Collapse Buttons */
 .bec-pin-button,
 .bec-position-button,
-.bec-expand-all-button,
-.bec-collapse-all-button {
+.bec-expand-collapse-button {
 	align-self: center;
 	margin-right: 4px;
 }
 
 .bec-pin-button.is-pressed,
 .bec-position-button.is-pressed,
-.bec-expand-all-button.is-pressed,
-.bec-collapse-all-button.is-pressed {
+.bec-expand-collapse-button.is-pressed {
 	background: #1e1e1e !important;
 	color: #ffffff !important;
 }
 
 .bec-pin-button.is-pressed:hover,
 .bec-position-button.is-pressed:hover,
-.bec-expand-all-button.is-pressed:hover,
-.bec-collapse-all-button.is-pressed:hover {
+.bec-expand-collapse-button.is-pressed:hover {
 	background: #2f2f2f !important;
 	color: #ffffff !important;
 }
